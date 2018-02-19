@@ -1,3 +1,4 @@
+package com.grailsrocks.emailconfirmation
 /*
  * Copyright 2004-2005 the original author or authors.
  *

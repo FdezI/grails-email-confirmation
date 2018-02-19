@@ -1,3 +1,7 @@
+package grails.plugins.emailconfirmation
+
+import grails.plugins.Plugin
+
 /*
  * Copyright 2004-2005 the original author or authors.
  *
@@ -16,10 +20,10 @@
 import grails.util.Environment
 
 
-class EmailConfirmationGrailsPlugin {
+class EmailConfirmationGrailsPlugin extends Plugin {
 	def version = "3.0.0"
 
-    def grailsVersion = "2.4 > *"
+    def grailsVersion = "3.0 > *"
 
     def loadAfter = ['logging']
 
@@ -37,7 +41,7 @@ Send emails to users to perform click-through confirmations of any kind.
 '''
 
         // URL to the plugin's documentation
-    def documentation = "http://grailsrocks.github.com/grails-email-confirmation"
+    def documentation = "http://grailsrocks.github.com/emailconfirmation"
 
     // Extra (optional) plugin metadata
 
@@ -54,7 +58,7 @@ Send emails to users to perform click-through confirmations of any kind.
     def issueManagement = [ system: "JIRA", url: "http://jira.grails.org/browse/GPEMAILCONFIRMATION" ]
 
     // Online location of the plugin's browseable source code.
-    def scm = [ url: "http://github.com/grailsrocks/grails-email-confirmation" ]
+    def scm = [ url: "http://github.com/grailsrocks/emailconfirmation" ]
 
     def doWithWebDescriptor = { xml ->
     }

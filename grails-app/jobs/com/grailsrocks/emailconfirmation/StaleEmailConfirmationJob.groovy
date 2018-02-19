@@ -22,11 +22,11 @@ class StaleEmailConfirmationJob {
                cronExpression:"0 0 3 * * ? *"  // Once every twenty four hours at 3am
        }
 
-    def group = "EmailConfirmationGroup"
+    static group = "EmailConfirmationGroup"
        
 	def emailConfirmationService
 	
-	def execute() {	
+	void execute() {
 		if (log.infoEnabled) {
 			log.info( "Culling stale email confirmations")
 		}
